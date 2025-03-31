@@ -1,15 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>COURS GITHUB</h1>
-    <h2>Version 2</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio aperiam tempora cupiditate voluptates atque voluptatem suscipit quaerat. Perspiciatis, dolorem nihil facilis pariatur, tempore magni eum reprehenderit iure hic consequuntur quos?</p>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- titre de la page -->
+    <title>Cours HTML de zero</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="./logo html.jpg" />
+  </head>
+  <body>
+    <nav>
+      <!-- UL = Unordered list -->
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li>
+          <a href="#form">Formulaire</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <!-- Un seul h1 par page -->
+      <h1>Ceci est le titre principale</h1>
+      <p>
+        Texte classique <em>texte en italique</em>
+        <strong>texte en gras</strong>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe
+        consequuntur sint fugiat aliquid sed nobis magnam, ipsam beatae, esse
+        sequi reiciendis quasi quam incidunt eaque officiis harum recusandae
+        nihil?
+      </p>
+    </header>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore numquam necessitatibus nesciunt aperiam quisquam autem quia veniam sequi. Laborum quidem rerum quasi aspernatur? Quos esse corporis nostrum quaerat vel cumque placeat facilis soluta aliquam magnam asperiores veritatis, deleniti nulla temporibus accusantium similique assumenda obcaecati sunt reprehenderit dolor nam velit cum modi. Quod cumque saepe, id magni placeat odit numquam ullam ut unde quidem quae nemo et at voluptatum in repudiandae commodi beatae recusandae? Quia molestiae atque, sunt animi iste odit omnis deserunt amet officiis veniam dolorum distinctio exercitationem totam adipisci delectus mollitia nisi necessitatibus asperiores eveniet quasi. Ipsa, similique?</p>
-</body>
+    <main>
+      <section>
+        <h2>Ordered list</h2>
+        <ol>
+          <li>Ceci</li>
+          <li>est</li>
+          <li>une</li>
+          <li>liste</li>
+          <li>ordonee</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Image en html</h3>
+        <img src="./bg.jpg" height="200"alt="image-secction">
+
+        <div>
+          <h4 >Tableaux</h4>
+          <table border="4" cellpadding="10" cellspacing="4" style="text-align: center;">
+            <!-- thead pour l'entete du tableau -->
+            <thead>
+              <tr>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+              </tr>
+            </thead>
+            <!-- tbody c'est pour le corp du tableau -->
+            <tbody>
+              <tr>
+                <td>Cel 1</td>
+                <td>Cel 2</td>
+                <td>Cel 3</td>
+              </tr>
+              <tr>
+                <td>Cel 4</td>
+                <td>Cel 5</td>
+                <td>Cel 6</td>
+              </tr>
+              <tr>
+                <td>Cel 7</td>
+                <td>Cel 8</td>
+                <td>Cel 9</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h5><span>&#8594;</span>Les liens</h5>
+          <a href="https://htmlcheatsheet.com" target="_blank">HTML Cheat Sheet</a>
+          <!-- _blank permet de creer un nouvel onglet -->
+        </div>
+        <div>
+          <h6><i>&#128190;</i>Videos</h6>
+          <video src="./video.mp4" height="200" autoplay muted loop></video>
+        </div>
+      </section>
+      <section id="form">
+        <h2>Les formulaires</h2>
+        <form action="">
+          <!-- for et id permetent de lier le label a l'input  -->
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="Entrez votre nom">
+
+          <br/>
+
+          <label for="age">Age</label>
+          <input type="number" id="age" value="18" placeholder="Entrez votre age">
+
+          <br/>
+
+          <!-- input de type select  -->
+          <select id="gender">
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+            <option value="Autre">Autre</option>
+
+          </select>
+
+          <!-- input de type radio -->
+          <div>
+            <input type="radio" name="type" id="human" checked/>
+            <label for="human">Humain</label>
+
+            <input type="radio" name="type" id="dog"/>
+            <label for="dog">Chien</label>
+
+            <input type="radio" name="type" id="Cat"/>
+            <label for="Cat">Chat</label>
+          </div>
+
+          <textarea placeholder="Votre message..." cols="30" rows="10"></textarea>
+
+          <br/>
+
+          <!-- Input de type checkbox -->
+          <input type="checkbox" name="" id="cgv"> <!-- Condition generales de vente -->
+          <label for="cgv">Accepter les conditions generales</label>
+
+          <br/>
+
+          <!-- input de type bouton -->
+          <input type="submit" value="Ceci est le bouton pour valider le formulaire">
+        </form>
+      </section>
+    </main>
+    <!-- mail et envoie de message avec "mailto" -->
+    <footer>
+      <a href="mailto:gersonaguinaldlo2.0@gmail.com">Contactez moi!</a>
+      <a href="Notice.txt" download="Notice">Telecharger la notice</a>
+    </footer>
+  </body>
 </html>
