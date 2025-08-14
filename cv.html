@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerson SACAMA - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .cv-header {
+            border-bottom: 2px solid #1e40af;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cv-section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 0.75rem;
+        }
+
+        .cv-subsection-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-item {
+            margin-bottom: 0.75rem;
+        }
+
+            .cv-item p {
+                margin: 0.25rem 0;
+                font-size: 0.875rem;
+                color: #4b5563;
+            }
+
+        .cv-contact i {
+            width: 1.5rem;
+            text-align: center;
+            color: #1e40af;
+        }
+
+        .cv-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-semibold text-gray-900">Gerson SACAMA</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-blue-700 font-medium transition">Retour au Portfolio</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="index.html#home" class="block text-gray-700 hover:text-blue-700 font-medium py-2">Retour au Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CV Content -->
+    <div class="cv-container pt-24">
+        <!-- Header -->
+        <div class="cv-header text-center">
+            <h1 class="text-3xl font-bold text-gray-900">Gerson SACAMA</h1>
+            <p class="text-xl text-gray-700">Développeur web Junior</p>
+            <p class="text-gray-600 mt-2 text-sm">Étudiant en licence 3 Génie Logiciel, je cherche à acquérir de l'expérience en développement de solutions numériques. Mon objectif est de maîtriser les principes et méthodologies du développement d'applications afin de créer des solutions innovantes.</p>
+        </div>
+
+        <!-- Two-Column Layout -->
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Left Column -->
+            <div class="md:w-1/3 space-y-6">
+                <!-- Contact -->
+                <div>
+                    <h3 class="cv-section-title">Contact</h3>
+                    <ul class="space-y-2 cv-contact">
+                        <li><i class="fas fa-envelope"></i> gersonsacama1@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bas de Gué-Gué, Libreville, Gabon</li>
+                        <li><i class="fas fa-phone"></i> +241 66 60 56 93</li>
+                        <li><i class="fab fa-linkedin"></i> @GersonAguinaldo</li>
+                        <li><i class="fab fa-github"></i> @gerson-aguinaldo</li>
+                        <li><i class="fas fa-globe"></i> Angolais</li>
+                    </ul>
+                </div>
+                <!-- Langues -->
+                <div>
+                    <h3 class="cv-section-title">Langues</h3>
+                    <ul class="space-y-2">
+                        <li>Français - Courant</li>
+                        <li>Portugais - Intermédiaire</li>
+                        <li>Anglais - Intermédiaire</li>
+                    </ul>
+                </div>
+                <!-- Compétences -->
+                <div>
+                    <h3 class="cv-section-title">Compétences</h3>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Programmation</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-sm">
+                            <li>Langages de base : HTML, CSS</li>
+                            <li>Niveau moyen : Javascript, Typescript</li>
+                            <li>Connaissances de base : Angular, React</li>
+                        </ul>
+                    </div>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">UI/UX Design</h4>
+                        <p class="text-sm">Maquettage et Prototypage avec Adobe XD</p>
+                    </div>
+                </div>
+                <!-- Atouts -->
+                <div>
+                    <h3 class="cv-section-title">Atouts</h3>
+                    <ul class="space-y-2">
+                        <li>Pensée analytique</li>
+                        <li>Ponctuel</li>
+                        <li>Facilité d'adaptation</li>
+                        <li>Collaboration d'équipe</li>
+                    </ul>
+                </div>
+                <!-- Outils -->
+                <div>
+                    <h3 class="cv-section-title">Outils maîtrisés</h3>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Outils de Gestion de projet</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-sm">
+                            <li>Trello</li>
+                            <li>Miro</li>
+                            <li>Slack</li>
+                        </ul>
+                    </div>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Outils de conception graphique</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-sm">
+                            <li>Canva</li>
+                        </ul>
+                    </div>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Outils techniques</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-sm">
+                            <li>Suite Microsoft Office 365</li>
+                            <li>Visual Studio Code</li>
+                            <li>Suite JetBrains</li>
+                        </ul>
+                    </div>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Veille informatique</h4>
+                        <p class="text-sm">Connaissance des IA (prompt engineering)</p>
+                    </div>
+                </div>
+                <!-- Centres d'intérêt -->
+                <div>
+                    <h3 class="cv-section-title">Centres d'intérêt</h3>
+                    <ul class="space-y-2">
+                        <li>Technologie</li>
+                        <li>Intelligence Artificielle</li>
+                        <li>Musique</li>
+                        <li>Réseaux sociaux</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right Column -->
+            <div class="md:w-2/3 space-y-6">
+                <!-- Projets et Réalisations -->
+                <div>
+                    <h3 class="cv-section-title">Projets et Réalisations</h3>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">My-tools</h4>
+                        <p>Juillet 2025 - Libreville</p>
+                        <p>Technologies utilisées : Angular et Tailwind CSS</p>
+                        <p>Description : Une petite application regroupant plusieurs outils tels que : Todo List, Bloc Note etc.</p>
+                    </div>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Projet Facturier</h4>
+                        <p>D'avril 2025 à mai 2025 - Facturier Libreville</p>
+                        <p>Langages utilisés : Typescript & HTML</p>
+                        <p>Description : Un formulaire qui génère un devis ou une facture en fonction du choix de l'utilisateur.</p>
+                    </div>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Site Web Statique</h4>
+                        <p>Avril 2025 - Hotel Clos</p>
+                        <p>Langage : HTML & CSS</p>
+                        <p>Description : Un site web vitrine pour un hôtel, qui présente l'espace disponible</p>
+                    </div>
+                </div>
+                <!-- Diplômes et Formations -->
+                <div>
+                    <h3 class="cv-section-title">Diplômes et Formations</h3>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Formation MongoDB</h4>
+                        <p>Mai 2025 - Udemy</p>
+                        <p>Apprentissage de MongoDB et de l'interface Compass</p>
+                    </div>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Formation Typescript et Tailwind CSS</h4>
+                        <p>Avril 2025 - Udemy</p>
+                        <p>Formation sur les bases de Typescript et sur le framework Tailwind CSS</p>
+                    </div>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Licence en Génie Logiciel</h4>
+                        <p>Depuis 2023 - Ecole Supérieure de Gestion d'Informatique et des Sciences (ESGIS), Libreville, Gabon</p>
+                        <p>Projets académiques en développement</p>
+                        <p>Introduction au Génie Logiciel</p>
+                        <p>Introduction à la Sécurité des Applications</p>
+                    </div>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Baccalauréat D</h4>
+                        <p>2021 à 2022 - Collège Moderne Bilingue des Lauréats (COMOBIL), Douala, Cameroun</p>
+                    </div>
+                    <div class="cv-item">
+                        <h4 class="cv-subsection-title">Brevet d'Étude Premier Cycle</h4>
+                        <p>2017 à 2018 - Lycée d'Application Nelson Mandela, Libreville, Gabon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="text-center mt-8 space-y-4">
+            <a href="index.html#home" class="cv-button bg-transparent border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">Retour au Portfolio</a>
+            <a href="cv.pdf" download class="cv-button bg-blue-600 text-white hover:bg-blue-700">Télécharger le CV en PDF</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2025 Gerson SACAMA. Tous droits réservés.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+                <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
